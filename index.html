@@ -268,6 +268,7 @@
       color: #f0c76b;
       text-decoration: underline;
     }
+
     .contact {
       background: #111;
       padding: 80px 7%;
@@ -324,6 +325,61 @@
       box-shadow: 0 8px 25px rgba(0,0,0,0.35);
     }
 
+    .phone-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hero-info .phone-row {
+      align-items: flex-start;
+    }
+
+    .phone-link {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero-info .phone-link {
+      font-weight: normal;
+    }
+
+    .contact-details {
+      margin-bottom: 25px;
+    }
+
+    .contact a:hover,
+    footer a:hover {
+      color: #ffffff;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .social-links img {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+    }
+
+    .social-links a:hover {
+      color: #ffffff;
+    }
+
     @media (max-width: 950px) {
       header {
         position: static;
@@ -344,6 +400,7 @@
 
       .hero {
         padding-top: 70px;
+        grid-template-columns: 1fr;
       }
 
       .hero h1 {
@@ -383,7 +440,7 @@
       <img src="logo.jpg" alt="HasseltHairstyle logo">
       <div>
         HasseltHairstyle<br>
-        <small>Modern & Classic</small>
+        <small>Modern &amp; Classic</small>
       </div>
     </div>
 
@@ -396,31 +453,37 @@
       <a href="#contact">CONTACT</a>
     </nav>
 
-    <a class="btn" href="https://wa.me/32466315091" target="_blank">WhatsApp</a>
+    <a class="btn" href="https://wa.me/32466315091" target="_blank" rel="noopener noreferrer">WhatsApp</a>
   </header>
 
   <section class="hero" id="home">
-  <div class="hero-content">
-    <h1>HasseltHairstyle</h1>
-    <h2>Haarstyling voor heren & dames</h2>
-    <p>Knippen, brushing & stijl<br>zonder afspraak</p>
+    <div class="hero-content">
+      <h1>HasseltHairstyle</h1>
+      <h2>Haarstyling voor heren &amp; dames</h2>
+      <p>Knippen, brushing &amp; stijl<br>zonder afspraak</p>
 
-    <a class="btn" href="https://wa.me/32466315091" target="_blank">WhatsApp</a>
+      <a class="btn" href="https://wa.me/32466315091" target="_blank" rel="noopener noreferrer">WhatsApp</a>
 
-    <div class="hero-info">
-      <div>📍 Minderbroedersstraat 29<br>3500 Hasselt</div>
-     <div>
-  ☎ <a href="tel:+32466315091" style="color:white; text-decoration:none;">
-    +32 466 31 50 91
-  </a>
-</div>
+      <div class="hero-info">
+        <div>
+          📍 Minderbroedersstraat 29<br>
+          3500 Hasselt
+        </div>
+
+        <div class="phone-row">
+          <img src="phone.png" alt="Phone" width="24">
+
+          <a class="phone-link" href="tel:+32466315091">
+            +32 466 31 50 91
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="hero-image">
-  <img src="outside.jpeg" alt="HasseltHairstyle buitenkant">
-</div>
-</section>
+    <div class="hero-image">
+      <img src="outside.jpeg" alt="HasseltHairstyle buitenkant">
+    </div>
+  </section>
 
   <section class="features" id="about">
     <div class="feature">
@@ -431,26 +494,26 @@
 
     <div class="feature">
       <span>👥</span>
-      <h3>VOOR HEREN & DAMES</h3>
+      <h3>VOOR HEREN &amp; DAMES</h3>
       <p>Professionele haarstyling voor iedereen.</p>
     </div>
 
     <div class="feature">
       <span>💨</span>
-      <h3>KNIPPEN & BRUSHING</h3>
+      <h3>KNIPPEN &amp; BRUSHING</h3>
       <p>Van klassiek knippen tot perfecte brushing.</p>
     </div>
 
     <div class="feature">
       <span>✨</span>
-      <h3>STIJL & VERZORGING</h3>
+      <h3>STIJL &amp; VERZORGING</h3>
       <p>De perfecte look met aandacht voor detail.</p>
     </div>
   </section>
 
   <section class="section" id="galerij">
     <small>Onze salon</small>
-    <h2>Sfeer & Kwaliteit</h2>
+    <h2>Sfeer &amp; Kwaliteit</h2>
 
     <div class="single-gallery">
       <h3>Salon interieur</h3>
@@ -483,145 +546,161 @@
     </div>
   </section>
 
-  
-    
-<section class="prices">
-  <h2>Populaire diensten</h2>
+  <section class="prices">
+    <h2>Populaire diensten</h2>
 
-  <div class="price-list">
+    <div class="price-list">
+      <div class="price-row">
+        <span>Heren knippen</span>
+        <strong>€18</strong>
+      </div>
 
-    <div class="price-row">
-      <span>Heren knippen</span>
-      <strong>€18</strong>
+      <div class="price-row">
+        <span>Kinderen</span>
+        <strong>€15</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Baard scheren</span>
+        <strong>€12</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Model scheren</span>
+        <strong>€15</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Knippen + scheren</span>
+        <strong>€30</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Knippen + wassen</span>
+        <strong>€21</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Dames knippen kort</span>
+        <strong>€25</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Meisjes -12 snit kinderen</span>
+        <strong>€20</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Brushing kort</span>
+        <strong>€25</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Permanent Krullen</span>
+        <a class="price-link" href="https://wa.me/32466315091" target="_blank" rel="noopener noreferrer">Vraag info</a>
+      </div>
+
+      <div class="price-row">
+        <span>Wenkbrauwen + gezicht</span>
+        <strong>€10</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Gezicht masker</span>
+        <strong>€10</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Haar wassen</span>
+        <strong>€5</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Gezicht masker heren</span>
+        <strong>€5</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Epileren met draad</span>
+        <strong>€5</strong>
+      </div>
     </div>
+  </section>
 
-    <div class="price-row">
-      <span>Kinderen</span>
-      <strong>€15</strong>
+  <section class="prices" id="openingstijden">
+    <h2>Openingstijden</h2>
+
+    <div class="price-list">
+      <div class="price-row">
+        <span>Maandag</span>
+        <strong>09:00 - 19:00</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Dinsdag</span>
+        <strong>Gesloten</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Woensdag</span>
+        <strong>09:00 - 19:00</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Donderdag</span>
+        <strong>09:00 - 19:00</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Vrijdag</span>
+        <strong>09:00 - 19:00</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Zaterdag</span>
+        <strong>09:00 - 19:00</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Zondag</span>
+        <strong>09:00 - 19:00</strong>
+      </div>
     </div>
-
-    <div class="price-row">
-      <span>Baard scheren</span>
-      <strong>€12</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Model scheren</span>
-      <strong>€15</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Knippen + scheren</span>
-      <strong>€30</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Knippen + wassen</span>
-      <strong>€21</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Dames knippen kort</span>
-      <strong>€25</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Meisjes -12 snit kinderen</span>
-      <strong>€20</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Brushing kort</span>
-      <strong>€25</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Permanent Krullen</span>
-      <a class="price-link" href="https://wa.me/32466315091" target="_blank">Vraag info</a>
-    </div>
-
-    <div class="price-row">
-      <span>Wenkbrauwen + gezicht</span>
-      <strong>€10</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Gezicht masker</span>
-      <strong>€10</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Haar wassen</span>
-      <strong>€5</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Gezicht masker heren</span>
-      <strong>€5</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Epileren met draad</span>
-      <strong>€5</strong>
-    </div>
-
-  </div>
-</section>
-
-<section class="prices" id="openingstijden">
-  <h2>Openingstijden</h2>
-
-  <div class="price-list">
-    <div class="price-row">
-      <span>Maandag</span>
-      <strong>09:00 - 19:00</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Dinsdag</span>
-      <strong>Gesloten</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Woensdag</span>
-      <strong>09:00 - 19:00</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Donderdag</span>
-      <strong>09:00 - 19:00</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Vrijdag</span>
-      <strong>09:00 - 19:00</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Zaterdag</span>
-      <strong>09:00 - 19:00</strong>
-    </div>
-
-    <div class="price-row">
-      <span>Zondag</span>
-      <strong>09:00 - 19:00</strong>
-    </div>
-  </div>
-</section>
+  </section>
 
   <section class="contact" id="contact">
     <div>
       <h2>Contact</h2>
       <p>Kom langs zonder afspraak of stuur ons een bericht voor meer informatie.</p>
 
-      <p>
-  📍 Minderbroedersstraat 29, 3500 Hasselt<br>
-  ☎ <a href="tel:+32466315091" style="color:white; text-decoration:none;">
-      +32 466 31 50 91
-     </a>
-      </p>
+      <div class="contact-details">
+        <p>📍 Minderbroedersstraat 29, 3500 Hasselt</p>
 
-      <a class="btn" href="https://wa.me/32466315091" target="_blank">WhatsApp / DM voor info</a>
+        <div class="phone-row">
+          <img src="phone.png" alt="Phone" width="28">
+
+          <a class="phone-link" href="tel:+32466315091">
+            +32 466 31 50 91
+          </a>
+        </div>
+      </div>
+
+      <a class="btn" href="https://wa.me/32466315091" target="_blank" rel="noopener noreferrer">
+        WhatsApp / DM voor info
+      </a>
+
+      <div class="social-links">
+        <a href="https://www.instagram.com/hasselthairstyle/" target="_blank" rel="noopener noreferrer">
+          <img src="instagram.png" alt="Instagram">
+          Instagram
+        </a>
+
+        <a href="https://www.tiktok.com/@hasselthairstyle1" target="_blank" rel="noopener noreferrer">
+          <img src="tiktok.png" alt="TikTok">
+          TikTok
+        </a>
+      </div>
+
     </div>
 
     <iframe src="https://www.google.com/maps?q=Minderbroedersstraat%2029%20Hasselt&output=embed"></iframe>
@@ -629,11 +708,11 @@
 
   <footer>
     <div>© 2026 HasseltHairstyle</div>
-    <div>Modern & Classic</div>
+    <div>Modern &amp; Classic</div>
     <div>Minderbroedersstraat 29, Hasselt</div>
   </footer>
 
-  <a class="whatsapp-fixed" href="https://wa.me/32466315091" target="_blank">☏</a>
+  <a class="whatsapp-fixed" href="https://wa.me/32466315091" target="_blank" rel="noopener noreferrer">☏</a>
 
 </body>
 </html>
