@@ -447,12 +447,40 @@
 }
 
     @media (max-width: 950px) {
-      header {
-      position: fixed;
-      top: 0;
-      flex-direction: column;
-      gap: 18px;
-      }
+  header {
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 5%;
+  }
+
+  .logo img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .logo {
+    font-size: 17px;
+  }
+
+  .logo small {
+    font-size: 12px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 12px;
+    margin-left: 0;
+  }
+
+  header .btn {
+    padding: 10px 22px;
+    font-size: 15px;
+  }
 
       nav {
         display: flex;
@@ -466,7 +494,7 @@
       }
 
       .hero {
-        padding-top: 260px;
+        padding-top: 210px;
         grid-template-columns: 1fr;
       }
 
